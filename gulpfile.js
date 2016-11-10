@@ -16,7 +16,7 @@ var paths = {
 
     'jquery': '/bower_components/jquery/dist',
     'moment':'/bower_components/moment/min',
-    'bootstrap': '/bower_components/bootstrap-css',
+    'bootstrap': '/bower_components/bootstrap/dist',
     'app':'/public/css',
     'tags': '/bower_components/bootstrap-tagsinput/dist',
     'fontawesome': '/bower_components/font-awesome',
@@ -27,20 +27,16 @@ elixir(function(mix) {
 
     mix.scripts([
         paths.jquery + "/jquery.min.js",
-        //paths.moment + '/moment-with-locales.min.js',
         paths.datetimepicker + '/js/bootstrap-datetimepicker.min.js',
         paths.bootstrap + '/js/bootstrap.min.js',
-        //  paths.select2 + "/js/select2.full.min.js",
-       // paths.tags + "/bootstrap-tagsinput.min.js",
     ],'public/js/all.js', './')
 
     mix.styles([
         paths.bootstrap + "/css/bootstrap.min.css",
         paths.bootstrap + "/css/bootstrap-theme.min.css",
         paths.datetimepicker + "/css/bootstrap-datetimepicker.min.css",
-        //paths.tags + "/bootstrap-tagsinput.min.css",
         paths.app + "/app.css",
-        // paths.select2 + "/css/select2.min.css",
+
         paths.fontawesome + "/css/font-awesome.css",
     ],'public/css/all.css', './');
 
