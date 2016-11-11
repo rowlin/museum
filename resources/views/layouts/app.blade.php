@@ -38,7 +38,6 @@
 <div class="container-fluid">
     <div class="row">
         <div class="col-sm-3 col-md-2 sidebar">
-            <img src="#" alt="logo">
             <ul class="nav nav-sidebar">
                 <li class="active"><a href="#">Календарь</a></li>
                 <li><a href="#">Посещение</a></li>
