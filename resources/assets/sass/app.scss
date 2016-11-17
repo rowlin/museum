@@ -1,24 +1,27 @@
-
-// Fonts
-@import url(https://fonts.googleapis.com/css?family=Raleway:300,400,600);
-
-// Variables
-@import "variables";
-
-// Bootstrap
-@import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
-
-
-/*
- * Global add-ons
- */
-
-.sub-header {
-  padding-bottom: 10px;
-  border-bottom: 1px solid #eee;
+.row{
+  margin: 0px;
 }
 
+body{
+  margin:0px;
+}
 
+.sidebar{
+  background-color: #f5f5f5;
+
+}
+
+nav{
+  background-color: #f5f5f5;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: black;
+}
+
+.navbar-toggle {
+  border-color: #000;
+}
 /*
  * Sidebar
  */
@@ -28,20 +31,25 @@
   display: none;
 }
 @media (min-width: 768px) {
+
+nav{
+  display: none;
+}
+
   .sidebar {
     position: fixed;
-    top: 51px;
     bottom: 0;
+    top: 0px;
     left: 0;
     z-index: 1000;
     display: block;
     padding: 20px;
     overflow-x: hidden;
     overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
-    background-color: #f5f5f5;
     border-right: 1px solid #eee;
   }
 }
+
 
 /* Sidebar navigation */
 .nav-sidebar {
@@ -53,7 +61,9 @@
   padding-right: 20px;
   padding-left: 20px;
 }
-.nav-sidebar > .active > a {
+.nav-sidebar > .active > a,
+.nav-sidebar > .active > a:hover,
+.nav-sidebar > .active > a:focus {
   color: #fff;
   background-color: #428bca;
 }
@@ -82,7 +92,6 @@
  */
 
 .placeholders {
-  margin-bottom: 30px;
   text-align: center;
 }
 .placeholders h4 {
