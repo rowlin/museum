@@ -16,7 +16,7 @@ var paths = {
     'modernizr': '/bower_components/modernizr',
     'lightslider':'bower_components/lightslider/dist',
     'jquery': '/bower_components/jquery/dist',
-    'moment':'/bower_components/moment/min',
+    'moment':'/bower_components/moment/src',
     'bootstrap': '/bower_components/bootstrap/dist',
     'app':'/public/css',
     'tags': '/bower_components/bootstrap-tagsinput/dist',
@@ -27,21 +27,22 @@ var paths = {
 elixir(function(mix) {
 
     mix.scripts([
-
         paths.jquery + "/jquery.min.js",
         paths.bootstrap + '/js/bootstrap.min.js',
-        paths.lightslider + "/js/lightslider.js",
+        paths.lightslider + "/js/lightslider.min.js",
+        paths.moment +"/moment.js",
         paths.datetimepicker + '/js/bootstrap-datetimepicker.min.js',
     ],'public/js/all.js', './')
 
     mix.styles([
         paths.bootstrap + "/css/bootstrap.min.css",
         paths.bootstrap + "/css/bootstrap-theme.min.css",
-        paths.lightslider + "/css/lightslider.css",
+        paths.lightslider + "/css/lightslider.min.css",
         paths.datetimepicker + "/css/bootstrap-datetimepicker.min.css",
         paths.fontawesome + "/css/font-awesome.css",
     ],'public/css/all.css', './');
 
+    mix.copy('bower_components/lightslider/dist/img', 'public/images');
     mix.copy('bower_components/font-awesome/fonts', 'public/fonts');
     mix.copy('bower_components/bootstrap-css/fonts/bootstrap', 'public/fonts');
 });

@@ -5,9 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" href="">
-    {{ Html::style("css/all.css") }}
-    {{ Html::style("css/app.css") }}
-    {{ Html::script("js/all.js")}}
+
+    <link media="all" type="text/css" rel="stylesheet" href="http://museum/css/all.css">
+    <link media="all" type="text/css" rel="stylesheet" href="http://museum/css/app.css">
+    <script src="http://museum/js/all.js"></script>
+
     <title>@yield('title')</title>
 </head>
 <body>
@@ -72,15 +74,15 @@
             </span>
             <!--в таком ключе публиуации записей-->
         </div>
-        <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+        <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 ">
 
             <!--content-->
+
 @yield('content')
             </div>
     </div><!--row-->
 
-
-
+@yield('scripts')
 
 </body>
 </html>
