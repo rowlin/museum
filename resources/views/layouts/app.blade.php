@@ -16,7 +16,8 @@
 <nav class="navbar  navbar-fixed-top">
     <div class="container-fluid">
         <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" >
+
+            <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target=".navbar-collapse">
                 <span class="sr-only">Панель навигации</span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
@@ -24,6 +25,8 @@
             </button>
             <a class="navbar-brand" href="#">Музей дружбы</a>
         </div>
+
+
         <div id="navbar" class="navbar-collapse collapse">
             <ul class="nav navbar-nav navbar-right">
                 <li><a href="#">Календарь</a></li>
