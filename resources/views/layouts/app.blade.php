@@ -6,10 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" href="">
 
-    <link media="all" type="text/css" rel="stylesheet" href="http://museum/css/all.css">
-    <link media="all" type="text/css" rel="stylesheet" href="http://museum/css/app.css">
-    <script src="http://museum/js/all.js"></script>
 
+    {{ HTML::script('js/all.js') }}
+    {{ HTML::style('css/all.css') }}
     <title>@yield('title')</title>
 </head>
 <body>

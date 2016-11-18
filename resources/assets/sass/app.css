@@ -23,6 +23,30 @@ nav {
 .sidebar {
   display: none; }
 
+.projects .col-md-6 {
+  text-align: justify;
+  font-size: 16px; }
+
+.projects h3, .news h3, #btn {
+  text-align: center; }
+
+.news {
+  text-align: justify;
+  font-size: 16px;
+  border: 1px solid #bbb;
+  margin-top: 30px;
+  padding-bottom: 10px; }
+
+footer {
+  background-color: #f5f5f5;
+  border: 1px solid black; }
+
+.footer {
+  margin-top: 20px; }
+
+.footer .col-md-6:last-child {
+  padding-left: 100px; }
+
 @media (min-width: 768px) {
   nav {
     display: none; }
@@ -68,37 +92,6 @@ nav {
     padding-left: 40px; } }
 .main .page-header {
   margin-top: 0; }
-
-/*slider*/
-#slider {
-  min-width: 420px; }
-
-#slider-img {
-  height: 100%;
-  width: 100%;
-  max-width: 1000px; }
-
-#slider-text {
-  display: block;
-  background: #FFF;
-  opacity: 0.7;
-  padding: 10px;
-  color: #000;
-  font-family: October, 'Comic Sans MS', cursive;
-  font-size: 2.3em;
-  position: relative;
-  top: -400px; }
-
-.content-slider h3 {
-  margin: 0;
-  padding: 70px 0; }
-
-.lSSlideOuter .lSPager.lSpg {
-  display: none; }
-
-.lSAction > a {
-  margin: 0 40px;
-  background-image: url("../images/slider/controls.png"); }
 
 /*
  * Placeholder dashboard ideas
