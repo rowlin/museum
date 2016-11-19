@@ -6,7 +6,7 @@
     <div class="projects">
         @foreach($all_tickets as $ticket)
             <div class="box">
-                <h4>Сообщение пользователя : {{ $ticket->mail }}</h4>
+                <h4>Сообщение пользователя (#{{$ticket->id}}): {{ $ticket->mail }}</h4>
                 <h3>{{$ticket->text}}</h3>
                 <p>{{ $ticket->created_at }}</p>
             </div><hr/>
@@ -23,7 +23,7 @@
   @endif
 
   @if(isset($ticket))
-  <h2>Последнее сообщение : </h2>
+  <h2>Последнее сообщение (#{{ $ticket->id }}) : </h2>
     <div class="alert alert-info">
       <p>{{ $ticket->mail }}</p>
       <h3>{{ $ticket->text }}</h3>
