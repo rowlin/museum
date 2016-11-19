@@ -28,7 +28,7 @@ AdminSection::registerModel(Event::class, function (ModelConfiguration $model) {
             AdminFormElement::text('title', 'Описание:'),
             AdminFormElement::text('name_org','Название организации(если надо):'),
             AdminFormElement::textarea('post', 'Пост :'),
-        AdminFormElement::datetime('start', 'Время начала :'),
+            AdminFormElement::datetime('start', 'Время начала :'),
             AdminFormElement::datetime('end', 'Время конца :'),
             AdminFormElement::images('image', 'Изображения:'),
             AdminFormElement::boolean('public', 'Опубликовать :')
