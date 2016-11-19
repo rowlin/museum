@@ -27,10 +27,11 @@ AdminSection::registerModel(Curs::class, function (ModelConfiguration $model) {
             AdminFormElement::text('title', 'Описание:'),
             AdminFormElement::text('name_org','Название организации(если надо):'),
             AdminFormElement::textarea('post', 'Пост :'),
+            AdminFormElement::text('post2', 'URL:'),
             AdminFormElement::datetime('start', 'Время начала :'),
             AdminFormElement::datetime('end', 'Время конца :'),
             AdminFormElement::images('image', 'Изображения:'),
-            AdminFormElement::boolean('public', 'Опубликовать :')
+            AdminFormElement::checkbox('public', 'Опубликовать :')
 
        );
         return $form;
