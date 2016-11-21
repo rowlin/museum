@@ -48,6 +48,7 @@
                 </div>
             </div>
         </div><!--конец раздела Проекты-->
+
         <div class="news"><!--начало раздела Поддержать проект-->
             <h3>Поддержать проект</h3>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis illo asperiores consequatur esse consectetur velit deleniti perferendis eligendi. Molestiae dolorem totam vel delectus, aut quaerat, mollitia, amet tenetur eius placeat quidem eaque praesentium! Ratione laborum maiores neque excepturi hic nisi animi. At nemo inventore saepe necessitatibus labore eum adipisci ex, accusamus id incidunt quo quaerat maxime sequi vero consequatur in, nihil dolor distinctio nisi earum porro asperiores. Voluptatum dolorum autem corporis a voluptas architecto harum dolor expedita aliquam. Illum vel, corporis blanditiis atque possimus beatae incidunt. Vel unde natus velit ex quo. Nam nesciunt suscipit alias earum consectetur esse similique.

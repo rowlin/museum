@@ -8,8 +8,7 @@ class EventModel extends Model
 {
     protected $table = 'Event';
     protected $fillable = ['name', 'title','name_org','post','post2','start','end','age','image','public','type'];
-
-
+    
     public function getImageAttribute($value)
     {
         $value = $this->attributes['image'];
