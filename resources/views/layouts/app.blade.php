@@ -9,6 +9,7 @@
 
     {{ HTML::script('js/all.js') }}
     {{ HTML::style('css/all.css') }}
+    @yield('styles')
     <title>@yield('title')</title>
 </head>
 <body>

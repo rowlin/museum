@@ -7,8 +7,7 @@ use App\EventModel;
 class EventController extends Controller
 {
     public function index(){
-        
-        
+
     }
     
     public function calendar(){
