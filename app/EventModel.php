@@ -7,7 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 class EventModel extends Model
 {
     protected $table = 'Event';
-    protected $fillable = ['name', 'title','name_org','post','post2','start','end','age','image','public','type'];
+    protected $fillable = ['name', 'title','name_org','post','post2','start_date','start_time', 'end_time','end_date','age','image','public','type'];
     
     public function getImageAttribute($value)
     {
@@ -19,5 +19,7 @@ class EventModel extends Model
     public function setImageAttribute($value){
         $this->attributes['image'] = json_encode($value);
     }
+
+
 
 }

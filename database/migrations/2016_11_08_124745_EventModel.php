@@ -21,8 +21,10 @@ class EventModel extends Migration
             $table->string('name_org'); //имя организатора
             $table->text('post');//описание
             $table->text('post2'); //запас
-            $table->dateTime('start'); // время начала
-            $table->dateTime('end'); // время конца
+            $table->date('start_date'); // время начала
+            $table->time('start_time'); // время начала
+            $table->date('end_date'); // время конца
+            $table->time('end_time'); // время конца
             $table->integer('age'); // возрастные органичения (если есть)
             $table->text('image'); // изображение/я .. если есть
             $table->boolean('public');//опубликовано или нет

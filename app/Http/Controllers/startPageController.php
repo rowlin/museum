@@ -2,13 +2,27 @@
 
 namespace App\Http\Controllers;
 use App\Slider;
+use App\EventModel;
 use Illuminate\Http\Request;
 
 class startPageController extends Controller
 {
     public function index(){
         $slider = Slider::all();
-        return view('start', compact('slider'));
+           $EventModels = EventModel::all();
+        foreach($EventModels as $event){
+            $event_to_calendar[] = \Calendar::event(
+                $event->name,
+                false,
+                $event->start,
+                $event->end,
+                $event->id
+            );
+        }
+
+        $calendar = \Calendar::addEvents($event_to_calendar);
+
+        return view('start', compact('slider', 'calendar'));
     }
 
     public function vizit(){
