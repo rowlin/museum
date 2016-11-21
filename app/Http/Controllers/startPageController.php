@@ -10,4 +10,21 @@ class startPageController extends Controller
         $slider = Slider::all();
         return view('start', compact('slider'));
     }
+
+    public function vizit(){
+        return view('pages.vizit');
+    }
+
+    public function donation(){
+        return view('pages.donation');
+    }
+
+    public function about(){
+        return view('pages.about');
+
+    }
+
+    public function buy_ticket(){
+        return view('pages.buy_ticket');
+    }
 }

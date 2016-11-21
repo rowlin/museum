@@ -30,11 +30,11 @@
 
         <div id="navbar" class="navbar-collapse collapse">
             <ul class="nav navbar-nav navbar-right">
-                <li><a href="#">Календарь</a></li>
-                <li><a href="#">Посещение</a></li>
-                <li><a href="#">Купить билеты</a></li>
-                <li><a href="#">Музей</a></li>
-                <li><a href="#">Поддержать проект</a></li>
+                <li><a href="{{ url('/calendar') }}">Календарь</a></li>
+                <li><a href="{{ url('/vizit') }}">Посещение</a></li>
+                <li><a href="{{ url('/buy_ticket') }}">Купить билеты</a></li>
+                <li><a href="{{ url('/about') }}">Музей</a></li>
+                <li><a href="{{ url('/donation') }}">Поддержать проект</a></li>
             </ul>
             <form class="navbar-form navbar-right">
                 <input type="text" class="form-control" placeholder="Поиск...">
@@ -53,11 +53,12 @@
                 <input type="text" class="form-control" placeholder="Поиск...">
             </form>
             <ul class="nav nav-sidebar">
-                <li><a href="#">Календарь</a></li>
-                <li><a href="#">Посещение</a></li>
-                <li><a href="#">Купить билеты</a></li>
-                <li><a href="#">Музей</a></li>
-                <li><a href="#">Поддержать проект</a></li>
+                <li><a href="{{ url('/calendar') }}">Календарь</a></li>
+                <li><a href="{{ url('/vizit') }}">Посещение</a></li>
+                <li><a href="{{ url('/buy_ticket') }}">Купить билеты</a></li>
+                <li><a href="{{ url('/about') }}">О музее</a></li>
+                <li><a href="{{ url('/donation') }}">Поддержать проект</a></li>
+                <li><a href="{{ url('/request') }}">Пожелания</a></li>
             </ul>
 
 
