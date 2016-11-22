@@ -36,7 +36,7 @@ AdminSection::registerModel(Event::class, function (ModelConfiguration $model) {
             AdminFormElement::time('end_time', 'Время:'),
             AdminFormElement::images('image', 'Изображения:'),
             AdminFormElement::checkbox('public', 'Опубликовать :'),
-            AdminFormElement::select('type','Категория' )->setOptions(['18-22', '22-28', '28-45'])
+            AdminFormElement::select('type','Категория' )->setOptions(['Экскурсии', 'Встречи', 'Выставки','Сходки'])
        );
         return $form;
     });

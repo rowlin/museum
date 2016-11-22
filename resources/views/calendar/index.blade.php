@@ -13,4 +13,4 @@
 
 @section('scripts')
     {{  HTML::script('js/calendar.js') }}
-@endsection
+@endsection $table->dateTime('end_time'); // время конца
